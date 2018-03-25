@@ -27,9 +27,9 @@ migrate = SQLAlchemy(app)
 * `session` - top-level attribute to work with data within the session;
 * `add(<a thing>)` - a thing that will be added to the database;
 * `query` - an attribute to run database queries;
-** `all()` - retrieve all objects;
-** `get(<id>)` - retrieve a DB object by its ID;
-* `delete(<a thing>)` - a thing that will be deleted from the database
+  * `all()` - retrieve all objects;
+  * `get(<id>)` - retrieve a DB object by its ID;
+* `delete(<a thing>)` - a thing that will be deleted from the database;
 * `commit()` - commit changes within the database.
 
 ## Lesson 5 - User's login
@@ -47,14 +47,16 @@ login = LoginManager(app)  # After initializing app
 ```
 
 ### Flask-login attributes
-* `is_authenticated` - a property, that returns True if a user is authenticated
+* `is_authenticated` - a property, that returns True if a user is
+  authenticated;
 * `is_active` - a property, if user's account is active;
-* `is anonymous` - a property that is False for regular users, True - otherwise
-* `get_id()` - a method that returns a unique string identificator for a user
+* `is anonymous` - a property that is False for regular users, True -
+  otherwise;
+* `get_id()` - a method that returns a unique string identificator for a user.
 
 
 ### Werkzeug.url attributes
-* `url_parse` - validates if URL delongs to the same sitegt
+* `url_parse` - validates if URL delongs to the same site.
 
 ### WTForms hacks
 WTForms takes methods `validate_<field_name>` as custom validators and invokes
@@ -65,6 +67,6 @@ them in addition to the stock validators.
 This lesson is about adding user profiles with avatars etc.
 What will be changes:
 * Added avatars from Gravatar service;
-* Using Jinja 2 Sub-templates that allows to use the same template for atomic items. Usage: `{% include '<template>' %}`
+* Introduced Jinja 2 sub-templates that allow to use the same template for atomic items. Usage: `{% include '<template>' %}`;
 * Adding fields "about me" and "last seen" (revise using `flask db migration`
-  and `flask db upgrade`)
+  and `flask db upgrade`).
