@@ -103,3 +103,5 @@ ENV/
 
 # Vim related
 *.sw*
+
+app.db
