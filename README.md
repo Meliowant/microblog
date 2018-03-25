@@ -59,3 +59,12 @@ login = LoginManager(app)  # After initializing app
 ### WTForms hacks
 WTForms takes methods `validate_<field_name>` as custom validators and invokes
 them in addition to the stock validators.
+
+## Lesson 6: User profiles
+### Description
+This lesson is about adding user profiles with avatars etc.
+What will be changes:
+* Added avatars from Gravatar service;
+* Using Jinja 2 Sub-templates that allows to use the same template for atomic items. Usage: `{% include '<template>' %}`
+* Adding fields "about me" and "last seen" (revise using `flask db migration`
+  and `flask db upgrade`)
