@@ -67,6 +67,11 @@ them in addition to the stock validators.
 This lesson is about adding user profiles with avatars etc.
 What will be changes:
 * Added avatars from Gravatar service;
-* Introduced Jinja 2 sub-templates that allow to use the same template for atomic items. Usage: `{% include '<template>' %}`;
+* Introduced Jinja 2 sub-templates that allow to use the same template for atomic items. 
+  Usage: `{% include '<template>' %}`;
 * Adding fields "about me" and "last seen" (revise using `flask db migration`
   and `flask db upgrade`).
+  
+## Lesson 7 - Error handling
+### Description
+
