@@ -74,4 +74,23 @@ What will be changes:
   
 ## Lesson 7 - Error handling
 ### Description
+This lesson is about debug mode. To enable it set `FLASK_DEBUG` to `1`.
+
+### Decorators
+* `@app.errorhandler(<error_code>)`    calls on error with the appropriate `<error_code>`
+
+### Module `logging`
+#### Levels:
+* `DEBUG`;
+* `INFO`;
+* `WARNING`;
+* `ERROR`;
+* `CRITICAL`.
+
+### Sending errors by mail
+* Requries `logging` module (`SMTPHandler` class);
+* Requries e-mail settings;
+
+### Recording errors to the file
+* Requires `logging` midule (`RotatingFileHandler` class);
 
