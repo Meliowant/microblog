@@ -62,7 +62,7 @@ login = LoginManager(app)  # After initializing app
 WTForms takes methods `validate_<field_name>` as custom validators and invokes
 them in addition to the stock validators.
 
-## Lesson 6: User profiles
+## Lesson 6 - User profiles
 ### Description
 This lesson is about adding user profiles with avatars etc.
 What will be changes:
